@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Glass Suite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="glass-card">
+
+    <h1>✨ AI Glass Suite</h1>
+    <p class="subtitle">Your Intelligent Content Assistant</p>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab active" data-tab="ask">Ask</button>
+        <button class="tab" data-tab="summarize">Summarize</button>
+        <button class="tab" data-tab="ideas">Ideas</button>
+        <button class="tab" data-tab="define">Define</button>
+    </div>
+
+    <!-- Ask -->
+    <div id="ask" class="tab-content active">
+        <textarea id="askInput" placeholder="Ask anything..."></textarea>
+        <button class="action-btn" data-type="ask">Ask AI</button>
+        <div id="askOutput" class="output"></div>
+    </div>
+
+    <!-- Summarize -->
+    <div id="summarize" class="tab-content">
+        <textarea id="summaryInput" placeholder="Paste text to summarize..."></textarea>
+        <button class="action-btn" data-type="summarize">Summarize</button>
+        <div id="summaryOutput" class="output"></div>
+    </div>
+
+    <!-- Ideas -->
+    <div id="ideas" class="tab-content">
+        <textarea id="ideaInput" placeholder="Ask for ideas..."></textarea>
+        <button class="action-btn" data-type="ideas">Generate Ideas</button>
+        <div id="ideaOutput" class="output"></div>
+    </div>
+
+    <!-- Define -->
+    <div id="define" class="tab-content">
+        <textarea id="defineInput" placeholder="Enter a term..."></textarea>
+        <button class="action-btn" data-type="define">Get Definition</button>
+        <div id="defineOutput" class="output"></div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
